@@ -1,0 +1,10 @@
+[package]
+name = "rust_scraper"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = "0.13.1"
+scraper = "0.25.0"
+sqlx = { version = "0.7", features = ["runtime-tokio", "sqlite", "macros"] }
+tokio = { version = "1", features = ["full"] }
